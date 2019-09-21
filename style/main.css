@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 * {
     font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -9,6 +11,7 @@ body {
 }
 
 header, footer  {
+    color: #ffffff;
     padding: 0em 5em;
     background-color: lightgrey;
     display: flex;
@@ -35,32 +38,45 @@ header ul li, footer ul li {
     padding: 0em 1em;
 }
 
+header {
+    background-color: #01579b;
+}
 footer {
-    position: relative;
+    background-color: #002f6c;
 }
 
 /* ------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Rubik');
+main {
+    padding: 0em 5em;
+    min-height: 80vh;
+}
+
 html, body {
   padding: 0;
   margin: 0;
   background: whitesmoke;
-  font-family: "Rubik";
+  font-family: "Roboto";
   font-size: 15px;
 }
+
 #shots {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1080px;
-  margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    max-width: 1080px;
+    margin: auto;
 }
 #shots .shot {
   position: relative;
   display: block;
   width: 25%;
-  background: #ea4c89;
+  background: #5e92f3;
   color: white;
   text-decoration: none;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 #shots .shot:hover img {
   opacity: 0.1;
